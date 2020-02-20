@@ -2,7 +2,7 @@
 ============================================
 ; Title: Assignment 1.5
 ; Author: Darius Dinkins   
-; Date: 16 Feb 2020
+; Date: 19 Feb 2020
 ; Modified By: Darius Dinkins
 ; Description: This program demonstrates the
 ; use of JavaScript variables, types, and values
@@ -91,3 +91,4 @@ console.log(address2);
 console.log(payRate2);
 console.log(hireDate2);
 
+//end program
