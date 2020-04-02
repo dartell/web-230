@@ -1,0 +1,62 @@
+<!--
+============================================
+; Title:  Discussion 7.3.js
+; Author: Professor Krasso
+; Date:   31 Mar 2020
+; Modified by: Darius Dinkins
+; Description: Client-Side JavaScript
+===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<script> //Ordered list using document write.
+  document.write("<h1>SHOPPING LIST v.1</h1>")
+   document.write("<ol> <li>Oranges</li> <li>Apples</li> <li>Pears</li> <li>Limes</li> <li>Lemons</li>  </ol>")
+</script>
+<div id="list">
+<script> //Ordered list using document write with CSS styling for the table.  All additional elements must use a "+" in between linebreaks
+  document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+  "<table>"+
+  "<tr>"+
+    "<th>Id</th>"+
+    "<th>Item</th>"+
+    "</tr>"+
+    "<tr>"+
+      "<td>1</td>"+
+      "<td>Oranges</td>"+
+      "</tr>"+
+      "<tr>"+
+        "<td>2</td>"+
+        "<td>Apples</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td>3</td>"+
+        "<td>Pears</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td>4</td>"+
+        "<td>Limes</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td>5</td>"+
+        "<td>Lemons</td>"+
+        "</tr>"+
+        "</table>"
+
+
+
+</script>
+</div>
+</body>
+</html>
+
+

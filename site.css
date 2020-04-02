@@ -1,0 +1,9 @@
+#list th {
+
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+#list tr:nth-child(odd){background-color: #61bfe4;}
+

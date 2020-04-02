@@ -1,0 +1,8 @@
+#components th {
+
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+#components tr:nth-child(odd){background-color: rgb(190, 190, 238);}

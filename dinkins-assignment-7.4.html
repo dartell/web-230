@@ -1,0 +1,76 @@
+<!--
+============================================
+; Title:  Discussion 7.4.js
+; Author: Professor Krasso
+; Date:   31 Mar 2020
+; Modified by: Darius Dinkins
+; Description: Inline JavaScript Functions
+===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="7.4-css.css">
+
+</head>
+
+<div id="components">
+<script> //table with computer components.  Has in-line javascript All additional elements must use a "+" in between linebreaks
+  function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+  document.getElementById('components').innerHTML = "<h1>Computer Components</h1>" +
+
+
+  "<table>"+
+  "<tr>"+
+    "<th>Id</th>"+
+    "<th>Name</th>"+
+    "<th>Amount</th>"+
+    "<th>Functions</th>"+
+    "</tr>"+
+    "<tr>"+
+      "<td>1</td>"+
+      "<td>Laptop</td>"+
+      "<td>1,500.99</td>" +
+      "<td> <a href=javascript:alert('1');> EDIT </a> <a href=<button onclick=confirm('Are you sure?');>DELETE </button> </a> </td>" + //Could not figure out how to get "button onclick=confirm to work.  Currently takes user to an unknown page like a broken url"
+      "</tr>"+
+      "<tr>"+
+        "<td>2</td>"+
+        "<td>Motherboard</td>"+
+        "<td>35.70</td>" +
+        "<td> <a href=javascript:alert('2');> EDIT </a> <a href=<button onclick=confirm('Are you sure?');>DELETE </button> </a> </td>" +
+        "</tr>"+
+        "<tr>"+
+        "<td>3</td>"+
+        "<td>Monitor</td>"+
+        "<td>174.99</td>" +
+        "<td> <a href=javascript:alert('3');> EDIT </a> <a href=<button onclick=confirm('Are you sure?');>DELETE </button> </a> </td>" +
+        "</tr>"+
+        "<tr>"+
+        "<td>4</td>"+
+        "<td>Mouse</td>"+
+        "<td>13.99</td>" +
+        "<td> <a href=javascript:alert('4');> EDIT </a> <a href=<button onclick=confirm('Are you sure?');>DELETE </button> </a> </td>" +
+        "</tr>"+
+        "<tr>"+
+        "<td>5</td>"+
+        "<td>Keyboard</td>"+
+        "<td>14.50</td>" +
+        "<td> <a href=javascript:alert('5');> EDIT </a> <a href=<button onclick=confirm('Are you sure?');>DELETE </button> </a> </td>" +
+        "</tr>"+
+        "</table>"
+
+
+
+</script>
+</div>
+<body>
+
+</body>
+</html>
