@@ -1,0 +1,25 @@
+p {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+table {
+  padding-left: 20px;
+
+}
+
+button {
+  padding-left: 20px;
+}
+tr {
+  font-family: Roboto;
+  font: 300,400,500;
+}
+
+tr:nth-child(even) {
+  background-color: yellowgreen;
+}
+
+ul {
+  background-color: black;
+}

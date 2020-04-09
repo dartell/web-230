@@ -1,0 +1,89 @@
+<!--
+============================================
+; Title:  Assignment-8.3
+; Author: Professor Krasso
+; Date:   8 April 2020
+; Modified by: Darius Dinkins
+; Description: jQuery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="dinkins-assignment-8.3css.css">
+
+</head>
+<body>
+  <ul> <!-- Nav bar-->
+    <li><a href="www.bellevue.com">Home </a> </li>
+    <li><a href="www.bellevue.com">About </a> </li>
+    <li><a href="www.bellevue.com">Help </a> </li>
+  </ul>
+  <h1>LORSUM DATA</h1>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt dignissim justo, eu tristique purus tempus in. Morbi massa turpis, vulputate sit amet nulla eu, commodo fringilla massa. Pellentesque tincidunt tristique nunc, quis sagittis velit facilisis sed. Praesent pharetra risus magna, et lacinia turpis sodales in. Nunc fringilla lectus non bibendum bibendum. Cras semper efficitur vehicula. Nulla placerat nibh at libero pulvinar ultricies. Fusce malesuada congue porttitor.
+
+Suspendisse id mauris sollicitudin, consectetur tortor ut, vehicula leo. Curabitur pharetra sapien vel turpis mattis tincidunt. Etiam malesuada, urna nec vehicula mattis, tortor est mattis leo, ut pulvinar tellus arcu et odio. Suspendisse potenti. Sed bibendum neque in bibendum feugiat. Donec mollis tempor enim, eu egestas enim tristique eget. Etiam ultrices quis orci placerat feugiat. Fusce ullamcorper ex nec dolor rutrum sodales. Phasellus eu tortor non dolor porta malesuada.
+
+Morbi consequat ipsum eget condimentum dictum. Sed iaculis eget ipsum vitae ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent interdum porttitor ultricies. Proin vitae nisl at mauris scelerisque ultricies ac a sem. Duis nec arcu sed tellus aliquet placerat consectetur sed ante. Duis et fringilla arcu, et varius augue. Etiam luctus nibh quis velit convallis tempor. Proin at metus tristique, porttitor lacus in, fringilla velit. Nullam blandit neque in tempus posuere. Praesent vel luctus nisl. Quisque et elit eleifend, rutrum dolor non, blandit lacus. Quisque sit amet libero risus. Phasellus vel fringilla tellus, non suscipit massa. Cras tincidunt pharetra dui quis malesuada. Praesent mattis turpis et ante pharetra accumsan.
+
+Donec tristique felis ac dui efficitur, vel ornare eros laoreet. Phasellus rhoncus finibus interdum. Quisque lacinia nibh nec libero ornare, in pulvinar felis dapibus. Quisque eu risus vitae nisl maximus suscipit eu aliquam neque. Donec non massa ac metus malesuada convallis sed a neque. Nulla lorem libero, elementum a lacinia id, condimentum ut magna. Donec ornare diam vitae nulla hendrerit bibendum. Aenean vitae mi dignissim, finibus dui eget, hendrerit diam. Pellentesque sed facilisis ante, quis ornare enim. Sed ultricies justo ac ipsum convallis pharetra. Nam at neque eu velit ullamcorper pulvinar quis tempor est. Nam porta nibh quis lobortis lacinia. Duis lorem diam, tristique sit amet hendrerit in, pulvinar non turpis. In hac habitasse platea dictumst. Pellentesque tempus ullamcorper enim eget rhoncus. Pellentesque imperdiet quis nisi eu dignissim.
+
+Maecenas justo urna, aliquam vitae bibendum in, commodo non ex. Praesent condimentum accumsan luctus. Aliquam malesuada pretium justo, a tristique augue fermentum nec. Vivamus molestie ante sed est porta, vel mattis ante auctor. Aenean tempus massa et nibh finibus faucibus. Vestibulum lobortis tortor eleifend consequat elementum. Duis in augue ultricies, egestas leo sed, congue risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vel scelerisque quam.
+    </p>
+  <button> Toggle</button>
+
+  <br/>
+  <br/>
+<div id="fruitTable"></div> <!-- Begin Table-->
+<table>
+    <tr>
+        <td><a href="#" class="ID">1</a></td>
+        <td>Apple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="ID">2</a></td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="ID">3</a></td>
+        <td>Peach</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="ID">4</a></td>
+      <td>Plum</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="ID">5</a></td>
+    <td>Pear</td>
+  </tr>
+</table>
+
+</div>
+<script type="text/javascript">
+//begin Jquery with click and toggle function.  Toggle does the opposite of what you are trying to hide.
+  $(function() {
+    $("button").click(function() {
+      $("p").toggle();
+      })
+
+// Jquery function that replaces variables with text
+  $(".ID").click(function (event) {
+            event.preventDefault();
+            var fruitId = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("{fruit_Id: " + fruitId + ", fruit_Type: " + fruitType + "}");
+        });
+  });
+
+</script>
+
+</body>
+</html>
